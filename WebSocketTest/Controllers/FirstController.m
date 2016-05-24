@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [Connection sharedConnection];
     // Do any additional setup after loading the view.
 }
 
@@ -26,6 +27,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark - UITexfield delegate methods
 
 /*
 #pragma mark - Navigation

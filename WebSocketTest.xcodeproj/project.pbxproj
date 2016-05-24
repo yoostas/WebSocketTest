@@ -15,6 +15,7 @@
 		85C218B31CF4BB7500842E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C218B11CF4BB7500842E30 /* LaunchScreen.storyboard */; };
 		85C218BD1CF4BEC500842E30 /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218BC1CF4BEC500842E30 /* FirstController.m */; };
 		85C218C01CF4BEEF00842E30 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218BF1CF4BEEF00842E30 /* SecondController.m */; };
+		85C218C41CF4CBDE00842E30 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218C31CF4CBDE00842E30 /* Connection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		85C218BC1CF4BEC500842E30 /* FirstController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstController.m; path = Controllers/FirstController.m; sourceTree = "<group>"; };
 		85C218BE1CF4BEEF00842E30 /* SecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondController.h; path = Controllers/SecondController.h; sourceTree = "<group>"; };
 		85C218BF1CF4BEEF00842E30 /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondController.m; path = Controllers/SecondController.m; sourceTree = "<group>"; };
+		85C218C21CF4CBDE00842E30 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection.h; path = Connection/Connection.h; sourceTree = "<group>"; };
+		85C218C31CF4CBDE00842E30 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connection.m; path = Connection/Connection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 			children = (
 				85C218A61CF4BB7500842E30 /* AppDelegate.h */,
 				85C218A71CF4BB7500842E30 /* AppDelegate.m */,
+				85C218C11CF4CAA900842E30 /* Connection */,
 				85C218BA1CF4BE8300842E30 /* Controllers */,
 				85C218AC1CF4BB7500842E30 /* Main.storyboard */,
 				85C218AF1CF4BB7500842E30 /* Assets.xcassets */,
@@ -105,6 +109,15 @@
 				85C218BF1CF4BEEF00842E30 /* SecondController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		85C218C11CF4CAA900842E30 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				85C218C21CF4CBDE00842E30 /* Connection.h */,
+				85C218C31CF4CBDE00842E30 /* Connection.m */,
+			);
+			name = Connection;
 			sourceTree = "<group>";
 		};
 		93490422D4D022B7E92A01A1 /* Pods */ = {
@@ -241,6 +254,7 @@
 				85C218C01CF4BEEF00842E30 /* SecondController.m in Sources */,
 				85C218A51CF4BB7500842E30 /* main.m in Sources */,
 				85C218BD1CF4BEC500842E30 /* FirstController.m in Sources */,
+				85C218C41CF4CBDE00842E30 /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
