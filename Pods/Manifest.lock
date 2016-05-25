@@ -1,0 +1,15 @@
+PODS:
+  - SocketRocket (0.5.1)
+  - SSKeychain (1.4.0)
+
+DEPENDENCIES:
+  - SocketRocket
+  - SSKeychain
+
+SPEC CHECKSUMS:
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
+
+PODFILE CHECKSUM: 9135558cdb0aa5f9c76b82a0ea940855032d41e9
+
+COCOAPODS: 1.0.0
