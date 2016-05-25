@@ -10,29 +10,20 @@
 
 @interface SecondController ()
 @property (weak, nonatomic) IBOutlet UILabel *expirationDateLabel;
-
 @end
 
 @implementation SecondController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setTitle:@"App View"];
+    NSString *exDate = [[NSUserDefaults standardUserDefaults] objectForKey:apiTokenExparationDate];
+    exDate = [[exDate componentsSeparatedByString:@"T"] firstObject];
+    [self.expirationDateLabel setText:[NSString stringWithFormat:@"Exparation Date: %@", exDate] ];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

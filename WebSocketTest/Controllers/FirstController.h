@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Connection.h"
-@interface FirstController : UIViewController <UITextFieldDelegate>
+#import <SSKeychain.h>
+@interface FirstController : UIViewController <UITextFieldDelegate,ConnectionDelegate>
 
 @end

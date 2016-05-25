@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C28A557D320A4F8551A406C /* libPods-WebSocketTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073447FD279CB51DFB54490 /* libPods-WebSocketTest.a */; };
+		61E44A579092EAC0A867DCF7 /* libPods-WebSocketTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F934E2E548334D6AC98DFD /* libPods-WebSocketTest.a */; };
 		85C218A51CF4BB7500842E30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218A41CF4BB7500842E30 /* main.m */; };
 		85C218A81CF4BB7500842E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218A71CF4BB7500842E30 /* AppDelegate.m */; };
 		85C218AE1CF4BB7500842E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C218AC1CF4BB7500842E30 /* Main.storyboard */; };
@@ -16,10 +16,10 @@
 		85C218BD1CF4BEC500842E30 /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218BC1CF4BEC500842E30 /* FirstController.m */; };
 		85C218C01CF4BEEF00842E30 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218BF1CF4BEEF00842E30 /* SecondController.m */; };
 		85C218C41CF4CBDE00842E30 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218C31CF4CBDE00842E30 /* Connection.m */; };
+		85C218CA1CF4E73900842E30 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C218C91CF4E73900842E30 /* libicucore.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2073447FD279CB51DFB54490 /* libPods-WebSocketTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebSocketTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		397C9FD739EEA4568E14785D /* Pods-WebSocketTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketTest/Pods-WebSocketTest.release.xcconfig"; sourceTree = "<group>"; };
 		70B2A98A8CD8AA635132A76C /* Pods-WebSocketTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketTest/Pods-WebSocketTest.debug.xcconfig"; sourceTree = "<group>"; };
 		85C218A01CF4BB7500842E30 /* WebSocketTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +36,13 @@
 		85C218BF1CF4BEEF00842E30 /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondController.m; path = Controllers/SecondController.m; sourceTree = "<group>"; };
 		85C218C21CF4CBDE00842E30 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection.h; path = Connection/Connection.h; sourceTree = "<group>"; };
 		85C218C31CF4CBDE00842E30 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connection.m; path = Connection/Connection.m; sourceTree = "<group>"; };
+		85C218C51CF4E70200842E30 /* libSocketRocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSocketRocket.a; path = "../../../../Library/Developer/Xcode/DerivedData/WebSocketTest-cdclqeywntbhtqbqsyhnegmdhhfc/Build/Products/Debug-iphonesimulator/SocketRocket/libSocketRocket.a"; sourceTree = "<group>"; };
+		85C218C71CF4E70D00842E30 /* libSSKeychain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSSKeychain.a; path = "../../../../Library/Developer/Xcode/DerivedData/WebSocketTest-cdclqeywntbhtqbqsyhnegmdhhfc/Build/Products/Debug-iphonesimulator/SSKeychain/libSSKeychain.a"; sourceTree = "<group>"; };
+		85C218C91CF4E73900842E30 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		85C218F91CF5848500842E30 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		85C218FB1CF5849200842E30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		85C218FD1CF5849E00842E30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9F934E2E548334D6AC98DFD /* libPods-WebSocketTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebSocketTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C28A557D320A4F8551A406C /* libPods-WebSocketTest.a in Frameworks */,
+				85C218CA1CF4E73900842E30 /* libicucore.tbd in Frameworks */,
+				61E44A579092EAC0A867DCF7 /* libPods-WebSocketTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +61,13 @@
 		0D64EA99E4DC244065F80AA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2073447FD279CB51DFB54490 /* libPods-WebSocketTest.a */,
+				85C218FD1CF5849E00842E30 /* Foundation.framework */,
+				85C218FB1CF5849200842E30 /* Security.framework */,
+				85C218F91CF5848500842E30 /* CFNetwork.framework */,
+				85C218C91CF4E73900842E30 /* libicucore.tbd */,
+				85C218C71CF4E70D00842E30 /* libSSKeychain.a */,
+				85C218C51CF4E70200842E30 /* libSocketRocket.a */,
+				C9F934E2E548334D6AC98DFD /* libPods-WebSocketTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
