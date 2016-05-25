@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Connection.h"
-@interface FirstController : UIViewController
+@interface FirstController : UIViewController <UITextFieldDelegate>
 
 @end

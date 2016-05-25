@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <SocketRocket/SRWebSocket.h>
+#import "SocketRocket.h"
 
 @interface Connection : NSObject <SRWebSocketDelegate>
 + (Connection *) sharedConnection;

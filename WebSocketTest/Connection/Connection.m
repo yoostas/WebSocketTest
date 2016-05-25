@@ -5,7 +5,7 @@
 //  Created by Stanislav on 5/24/16.
 //  Copyright © 2016 Stanislav. All rights reserved.
 //
-
+// @"ws://echo.websocket.org/";
 #import "Connection.h"
 static NSString * const wsServerUrl = @"ws://52.29.182.220:8080/customer-gateway/customer";
 
@@ -52,10 +52,11 @@ static NSString * const wsServerUrl = @"ws://52.29.182.220:8080/customer-gateway
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket {
     NSLog(@"WebSocket is open now %@", webSocket.protocol);
     NSString *jsonString = @"{\"type\":\"LOGIN_CUSTOMER\",\"sequence_id\":\"a29e4fd0-581d-e06b-c837-4f5f4be7dd18\",\"data\":{\"email\":\"fpi@bk.ru\",\"password\":\"123123\"}}";
-    [webSocket send:jsonString];
+    [self.testSocket send:jsonString];
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
+    NSLog(@"Message reseeved %@",message);
     
 }
 
