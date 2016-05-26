@@ -58,8 +58,8 @@
     if (!self.testSocket) {
         [self setupSockets];
     }
-    NSString *randomString = [[NSProcessInfo processInfo] globallyUniqueString];
-    NSString *loginMessage = [NSString stringWithFormat:@"{\"type\":\"LOGIN_CUSTOMER\",\"sequence_id\":\"%@\",\"data\":{\"email\":\"%@\",\"password\":\"%@\"}}",randomString,email,password];
+    NSDictionary *loginDictionary = [self makeLoginDictionary:email andPassword:password];
+    NSString *loginMessage = [loginDictionary jsonStringWithPrettyPrint:YES];
     [self.testSocket send:loginMessage];
 }
 
@@ -82,9 +82,18 @@
     [self  setupSockets];
 }
 
--(void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean {
+- (void) webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean {
     [self.delegate connectionIsNotOk];
 }
 
+
+- (NSDictionary *) makeLoginDictionary:(NSString *)email andPassword:(NSString *)password {
+    NSDictionary *data = @{@"email":email,@"password":password};
+    NSString *randomString = [[NSProcessInfo processInfo] globallyUniqueString];
+    NSDictionary *loginDictionary = @{@"type":@"LOGIN_CUSTOMER",
+                                     @"sequence_id":randomString,
+                                     @"data":data};
+    return loginDictionary;
+}
 
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		61E44A579092EAC0A867DCF7 /* libPods-WebSocketTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F934E2E548334D6AC98DFD /* libPods-WebSocketTest.a */; };
 		853962E61CF6D14300C46548 /* NSString+ValidationAndDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 853962E51CF6D14300C46548 /* NSString+ValidationAndDictionary.m */; };
+		853962EC1CF6D56700C46548 /* NSDictionary+ToJSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 853962EB1CF6D56700C46548 /* NSDictionary+ToJSONString.m */; };
 		85C218A51CF4BB7500842E30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218A41CF4BB7500842E30 /* main.m */; };
 		85C218A81CF4BB7500842E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C218A71CF4BB7500842E30 /* AppDelegate.m */; };
 		85C218AE1CF4BB7500842E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C218AC1CF4BB7500842E30 /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 		70B2A98A8CD8AA635132A76C /* Pods-WebSocketTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketTest/Pods-WebSocketTest.debug.xcconfig"; sourceTree = "<group>"; };
 		853962E41CF6D14300C46548 /* NSString+ValidationAndDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ValidationAndDictionary.h"; path = "Extentions/NSString+ValidationAndDictionary.h"; sourceTree = "<group>"; };
 		853962E51CF6D14300C46548 /* NSString+ValidationAndDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ValidationAndDictionary.m"; path = "Extentions/NSString+ValidationAndDictionary.m"; sourceTree = "<group>"; };
+		853962EA1CF6D56700C46548 /* NSDictionary+ToJSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ToJSONString.h"; path = "Extentions/NSDictionary+ToJSONString.h"; sourceTree = "<group>"; };
+		853962EB1CF6D56700C46548 /* NSDictionary+ToJSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ToJSONString.m"; path = "Extentions/NSDictionary+ToJSONString.m"; sourceTree = "<group>"; };
 		85C218A01CF4BB7500842E30 /* WebSocketTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C218A41CF4BB7500842E30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85C218A61CF4BB7500842E30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 			children = (
 				853962E41CF6D14300C46548 /* NSString+ValidationAndDictionary.h */,
 				853962E51CF6D14300C46548 /* NSString+ValidationAndDictionary.m */,
+				853962EA1CF6D56700C46548 /* NSDictionary+ToJSONString.h */,
+				853962EB1CF6D56700C46548 /* NSDictionary+ToJSONString.m */,
 			);
 			name = Extentions;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				85C218A81CF4BB7500842E30 /* AppDelegate.m in Sources */,
 				85C218C01CF4BEEF00842E30 /* SecondController.m in Sources */,
 				85C218A51CF4BB7500842E30 /* main.m in Sources */,
+				853962EC1CF6D56700C46548 /* NSDictionary+ToJSONString.m in Sources */,
 				85C218BD1CF4BEC500842E30 /* FirstController.m in Sources */,
 				85C218C41CF4CBDE00842E30 /* Connection.m in Sources */,
 			);

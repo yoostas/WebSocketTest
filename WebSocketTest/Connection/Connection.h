@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SocketRocket.h"
 #import "NSString+ValidationAndDictionary.h"
+#import "NSDictionary+ToJSONString.h"
 
 static NSString * const errorType               = @"CUSTOMER_ERROR";
 static NSString * const successType             = @"CUSTOMER_API_TOKEN";
