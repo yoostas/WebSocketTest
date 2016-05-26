@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Connection.h"
 #import <SSKeychain.h>
+#import "NSString+ValidationAndDictionary.h"
 @interface FirstController : UIViewController <UITextFieldDelegate,ConnectionDelegate>
 
 @end

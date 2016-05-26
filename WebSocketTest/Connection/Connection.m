@@ -72,7 +72,7 @@
 - (void) webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
     NSString *receivedMessage = message;
     if (receivedMessage) {
-        [self.delegate messageReseived:[self dictionaryFromString:receivedMessage]];
+        [self.delegate messageReseived:[receivedMessage dictionaryFromString]];
     }    
 }
 
@@ -86,18 +86,5 @@
     [self.delegate connectionIsNotOk];
 }
 
-#pragma mark - Message processing
-
-- (NSDictionary *) dictionaryFromString:(NSString *)message {
-    NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *error = nil;
-    NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-    if (!error) {
-        return jsonDictionary;
-    }
-    else {
-        return [NSDictionary new];
-    }
-}
 
 @end
